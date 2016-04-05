@@ -13,7 +13,7 @@ public class Manos {
 
    public static void getNums()
   {
-  //Global Variables
+      //Global Variables
      int ac = 56;   //Sets global variables to be modified at any point
      int pc = 23;
      int e = 1;
@@ -50,23 +50,23 @@ public class Manos {
           }
          
          
-          for(int i = rand_pc; i<5; i++)
+          for(int i = 0; i<5; i++)
           {
               ar = pc;
              
         System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
-         + mar + "          " + e + "      T0" //t0 output
+         + mar + "          " + e + "      T0");//t0 output
          mar = arrayMEM[pc][0] * 1000 + arrayMEM[pc][1];
          ir = mar;
          pc++;//T1
          System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
-         + mar + "          " + e + "      T1" //T1 output
+         + mar + "          " + e + "      T1");//T1 output
 
          ar = arrayMEM[ar][1];
          mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
          System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
-         + mar + "          " + e + "      T2"      //T2 output      
-             */
+         + mar + "          " + e + "      T2" );     //T2 output      
+             
             
            
              //direct version of all memory functions
@@ -424,8 +424,6 @@ public class Manos {
               }
             }
           
-       
-  
 
 
    public static void main(String[] args) {
