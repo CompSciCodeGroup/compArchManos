@@ -123,11 +123,11 @@ int ar = 69;
          {
            //Store content of AC in memory
            /*
-            * cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-    << mar << "          " << e << "      T3" << endl;        //T3 output
+            * System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
+    + mar + "          " + e + "      T3"  )   ;    //T3 output        //T3 output
   mar = ac;
-  cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-    << mar << "          " << e << "      T4" << endl;        //T3 output
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
             */
            
          }
@@ -135,47 +135,47 @@ int ar = 69;
          {
            //Branch Unconditionally
            /*
-            * cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-    << mar << "          " << e << "      T3" << endl;        //T3 output
+            * System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
   pc = ar;
-  cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-    << mar << "          " << e << "      T4" << endl;        //T3 output
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
             */
          }
          else if(memoryarray[ar][0] == 5)
          {
            //Branch and save return address
            /*
-            * cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-    << mar << "          " << e << "      T3" << endl;        //T3 output
+            System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
   mar = pc;
   ar++;
-  cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-    << mar << "          " << e << "      T4" << endl;        //T3 output
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
   pc = ar;
-  cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-    << mar << "          " << e << "      T5" << endl;        //T3 output
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
             */
          }
          else if(memoryarray[ar][0] == 6)
          {
            //Increment and skip if zero
           /*
-           * cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-    << mar << "          " << e << "      T3" << endl;        //T3 output
+           * System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
   dr = mar;
-  cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-    << mar << "          " << e << "      T4" << endl;        //T3 output
+ System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
   dr++;
-  cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-    << mar << "          " << e << "      T5" << endl;        //T3 output
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
   mar = dr;
   if (dr == 0)
   {
     pc++;
   }
-  cout <<  << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-    << mar << "          " << e << "      T6" << endl;        //T3 output
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
            */
          }
          else if(memoryarray[ar][0] == 8)
@@ -184,7 +184,14 @@ int ar = 69;
            * ar = arrayMEM[ar][1];
       mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
       
-      then copy paste 0
+        System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
+    + mar + "          " + e + "      T3"  )   ;    //T3 output
+  dr = mar;
+  System.out.println( ir + "      " + ac + "      " + dr + "      " + pc + "      " + ar + "      "
+    + mar + "          " + e + "      T4" );        //T3 output
+  ac = ac & dr;
+  System.out.println(  ir + "      " + ac + "      " + dr + "      " + pc  + "      " + ar + "      "
+    + mar + "          " + e + "      T5" )   ;     //T3 output
            */
          }
          else if(memoryarray[ar][0] == 9)
@@ -193,7 +200,14 @@ int ar = 69;
             * ar = arrayMEM[ar][1];
       mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
       
-      then copy paste 1
+       System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
+    + mar + "          " + e + "      T3"  )   ;    //T3 output
+  dr = mar;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
+  ac = dr + ac;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
             */
          }
          else if(memoryarray[ar][0] == 10)
@@ -202,7 +216,14 @@ int ar = 69;
             * ar = arrayMEM[ar][1];
       mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
       
-      then copy paste 2
+     System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
+    + mar + "          " + e + "      T3"  )   ;    //T3 output        //T3 output
+  dr = mar;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
+  ac = dr;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
             */
          }
          else if(memoryarray[ar][0] == 11)
