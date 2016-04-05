@@ -204,10 +204,10 @@ int ar = 69;
     + mar + "          " + e + "      T3"  )   ;    //T3 output
   dr = mar;
   System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
-+ mar + "          " + e + "      T3"  )   ;    //T3 output
++ mar + "          " + e + "      T4"  )   ;    //T3 output
   ac = dr + ac;
   System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
-+ mar + "          " + e + "      T3"  )   ;    //T3 output
++ mar + "          " + e + "      T5"  )   ;    //T3 output
             */
          }
          else if(memoryarray[ar][0] == 10)
@@ -220,10 +220,10 @@ int ar = 69;
     + mar + "          " + e + "      T3"  )   ;    //T3 output        //T3 output
   dr = mar;
   System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
-+ mar + "          " + e + "      T3"  )   ;    //T3 output
++ mar + "          " + e + "      T4"  )   ;    //T3 output
   ac = dr;
   System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
-+ mar + "          " + e + "      T3"  )   ;    //T3 output
++ mar + "          " + e + "      T5"  )   ;    //T3 output
             */
          }
          else if(memoryarray[ar][0] == 11)
@@ -232,7 +232,11 @@ int ar = 69;
             * ar = arrayMEM[ar][1];
       mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
       
-      then copy paste 3
+      System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
+    + mar + "          " + e + "      T3"  )   ;    //T3 output        //T3 output
+  mar = ac;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
             */
          }
          else if(memoryarray[ar][0] == 12)
@@ -241,7 +245,11 @@ int ar = 69;
             * ar = arrayMEM[ar][1];
       mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
       
-      then copy paste 4
+     System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
+  pc = ar;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
             */
          }
          else if(memoryarray[ar][0] == 13)
@@ -250,7 +258,15 @@ int ar = 69;
             * ar = arrayMEM[ar][1];
       mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
       
-      then copy paste 5
+    System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
+  mar = pc;
+  ar++;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
+  pc = ar;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T5"  )   ;    //T3 output
             */
          }
          else if(memoryarray[ar][0] == 14)
@@ -259,7 +275,21 @@ int ar = 69;
             * ar = arrayMEM[ar][1];
       mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
       
-      then copy paste 6
+       System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
+  dr = mar;
+ System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
+  dr++;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T5"  )   ;    //T3 output
+  mar = dr;
+  if (dr == 0)
+  {
+    pc++;
+  }
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T6"  )   ;    //T3 output
             */
          }
          else if(memorayarray[ar][0] == 7)
@@ -267,11 +297,17 @@ int ar = 69;
              if(arrayMEM[ar][1] == 1)
                {
                  //Halt Computer and needs output like memory for each t step
+                  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
                  break;
+                  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
                }
                else if(arrayMEM[ar][1] == 2)
                {
                  //Skip next instruction if E is zero and needs output like memory for each t step
+                  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T5"  )   ;    //T3 output
                  if(e == 0)
                  {
                    pc++;
@@ -279,10 +315,14 @@ int ar = 69;
                  }
                  else
                    break;
+                    System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T6"  )   ;    //T3 output
                }
                else if(arrayMEM[ar][1] == 4)
                {
                  //Skip next instruction if AC is zero and needs output like memory for each t step
+                  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
                  if(ac == 0)
                  {
                    pc++;
@@ -290,62 +330,101 @@ int ar = 69;
                  }
                  else
                    break;
+                    System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
                }
                else if(arrayMEM[ar][1] == 8)
                {
                  //Skip next instruction if AC negative and needs output like memory for each t step
+                  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
                  if(ac < 0)
                  {
                    pc++;
                  }
                  else
                    break;
+                    System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
                }
                else if(arrayMEM[ar][1] == 10)
                {
                  //Skip Next Instruction if AC positive and needs output like memory for each t step
+                  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
                  if(ac > 0)
                  {   
                    pc++;
                  }
                  else
                    break;
+                    System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
                }
                else if(arrayMEM[ar][1] == 20)
                {
                  //Increment AC and needs output like memory for each t step
+                  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
                    ac = Integer.parseInt(binxx[i]);
                    ac++; 
+                    System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
                }
                else if(arrayMEM[ar][1] == 40)
                {
                  //Circulate left AC and E and needs output like memory for each t step
+                  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
                    ac = Integer.parseInt(binxx[i]) << 1;
+                    System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
                }
                else if(arrayMEM[ar][1] == 80)
                {
                  //Circulate right AC and E and needs output like memory for each t step
+                  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
                    ac = Integer.parseInt(binxx[i]) >> 1;
+                    System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
                }
                else if(arrayMEM[ar][1] == 100)
                {
                //Complement E and needs output like memory for each t step
+                System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
                    e = ~e;
+                    System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
                }
                else if(arrayMEM[ar][1] == 200)
                {
                  //Complement AC and needs output like memory for each t step
+                  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
                    ac = ~ac;
+                    System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
                }
                else if(arrayMEM[ar][1] == 400)
                {
                //Clear E and needs output like memory for each t step
+                System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
                    e = 0;
+                    System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
+
                }
                else if(arrayMEM[ar][1] == 800)
                {
                  //Clear AC and needs output like memory for each t step
+                  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
                    ac = 0;
+                    System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T4"  )   ;    //T3 output
                }
           }
          }
