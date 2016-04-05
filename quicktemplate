@@ -1,0 +1,314 @@
+package manos;
+
+/**
+ *
+ * @author mcclainhocklander, chase, justinhill, hunteranderson
+ */
+//package comp_arch;
+
+import java.util.Random;
+
+
+public class Manos {
+
+   public static void getNums()
+  {
+	 //variables
+	 /*
+	  *void ConvertToBinary(int n);
+void ConvertToHex(int n);
+
+void And();	//Sets prototypes to all functions
+void Add();
+void Load();
+void Store();
+void Branch();
+void BranchAndSave();
+void Increment();
+void ClearAC();
+void ClearE();
+void ComplimentAC();
+void ComplimentE();
+void CircularRight();
+void CircularLeft();
+void IncrementAC();
+void SkipACNeg();
+void SkipACPos();
+void SkipACZero();
+void SkipEZero();
+void Halt();
+
+//Global Variables
+int acReg = 42;		//Sets global variables to be modified at any point
+int pcReg = 12;
+int eReg = 1;
+int drReg = 13;
+int irReg = 120;
+int marReg = 0;
+int arReg = 80; 
+	  * 
+	  */
+	 //counter
+	   
+     //Memoryarray[400][1]
+	   //loop counter 
+	   //registerarray[] = { 800, 400, 200, 100, 80, 40, 20, 10, 8, 4, 2, 1 };
+	   
+     for(int i = 0; i<399; i++)
+     {
+       Random gen1 = new Random();
+
+       //memoryarray[i][0]= gen1.nextInt(15);      
+     } 
+     
+     for(int i = 0; i<399; i++)
+     {
+    	 /*
+    	  * if(memoryarray[i][1] == 7
+    	  * {
+    	  * 	memoryarrry[i][1] = random registerarray[] value
+    	  * }
+    	  * else
+    	  * {
+    	  * 	memoryarray[i][1] = gen1.nextInt(399)
+    	  * }
+    	  */
+     }
+    
+    
+     for(int i = rand_pc; i<5; i++)
+     {
+    	 
+    	 /*
+    	  * PRINT AND IMPLEMENT THIS 
+    	  *
+    	  * arReg = pcReg;
+		cout << endl;
+		cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
+			<< marReg << "          " << eReg << "      T0" <<endl;				//T0 output
+		
+		marReg = arrayMEM[pcReg][0] * 1000 + arrayMEM[pcReg][1];
+		irReg = marReg;
+		pcReg++;//T1
+		cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
+			<< marReg << "          " << eReg << "      T1" <<endl;				//T1 output
+
+		arReg = arrayMEM[arReg][1];
+		marReg = arrayMEM[arrayMEM[arReg][1]][0] * 1000 + arrayMEM[arrayMEM[arReg][1]][1];
+		cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
+			<< marReg << "          " << eReg << "      T2" <<endl;				//T2 output
+    	  */
+       
+         if(memoryarray[)
+         {
+           //Halt Computer
+           break;
+         }
+         else if(addr1[i] == 7 && addr2[i] == 0 && addr3[i] == 0 && addr4[i] == 2)
+         {
+           //Skip next instruction if E is zero
+           if(e == 0)
+           {
+             pc++;
+             break;
+           }
+           else
+             break;
+         }
+         else if(addr1[i] == 7 && addr2[i] == 0 && addr3[i] == 0 && addr4[i] == 4)
+         {
+           //Skip next instruction if AC is zero
+           if(ac == 0)
+           {
+             pc++;
+             break;
+           }
+           else
+             break;
+         }
+         else if(addr1[i] == 7 && addr2[i] == 0 && addr3[i] == 0 && addr4[i] == 8)
+         {
+           //Skip next instruction if AC negative
+           if(ac < 0)
+           {
+             pc++;
+           }
+           else
+             break;
+         }
+         else if(addr1[i] == 7 && addr2[i] == 0 && addr3[i] == 1 && addr4[i] == 0)
+         {
+           //Skip Next Instruction if AC positive
+           if(ac > 0)
+           {   
+             pc++;
+           }
+           else
+             break;
+         }
+         else if(addr1[i] == 7 && addr2[i] == 0 && addr3[i] == 2 && addr4[i] == 0)
+         {
+           //Increment AC
+           ac = Integer.parseInt(binxx[i]);
+           ac++;
+         }
+          else if(addr1[i] == 7 && addr2[i] == 0 && addr3[i] == 4 && addr4[i] == 0)
+         {
+           //Circulate left AC and E
+            ac = Integer.parseInt(binxx[i]) << 1;
+         }
+         else if(addr1[i] == 7 && addr2[i] == 0 && addr3[i] == 8 && addr4[i] == 0)
+         {
+           //Circulate right AC and E
+           ac = Integer.parseInt(binxx[i]) >> 1;
+         }
+         else if(addr1[i] == 7 && addr2[i] == 1 && addr3[i] == 0 && addr4[i] == 0)
+         {
+           //Complement E
+           e = ~e;
+         }
+         else if(addr1[i] == 7 && addr2[i] == 2 && addr3[i] == 0 && addr4[i] == 0)
+         {
+           //Complement AC
+           ac = ~ac;
+         }
+         else if(addr1[i] == 7 && addr2[i] == 4 && addr3[i] == 0 && addr4[i] == 0)
+         {
+           //Clear E
+           e = 0;
+         }
+         else if(addr1[i] == 7 && addr2[i] == 8 && addr3[i] == 0 && addr4[i] == 0)
+         {
+           //Clear AC
+           ac = 0;
+         }
+         else if([arReg][0] == 0)
+         {
+           //And memory word to AC
+           ar = Integer.parseInt(hexxx[ar]);
+           dr = Integer.parseInt(binxx[ar]);
+           ac = ac*dr; 
+           
+         }
+         else if([arReg][0] == 1)
+         {
+           //Add memory word to AC
+           ar = Integer.parseInt(hexxx[ar]);
+           dr = Integer.parseInt(binxx[ar]);
+           ac = ac+dr;
+         }
+         else if([arReg][0] == 2)
+         {
+           //Load memory word to AC
+           ar = Integer.parseInt(hexxx[ar]);
+           dr = Integer.parseInt(binxx[ar]);
+           ac = dr; 
+         }
+         else if([arReg][0] == 3)
+         {
+           //Store content of AC in memory
+           hexxx[ar] = Integer.toString(ac);
+           
+         }
+         else if([arReg][0] == 4)
+         {
+           //Branch Unconditionally
+           pc = ar;
+         }
+         else if([arReg][0] == 5)
+         {
+           //Branch and save return address
+           hexxx[ar] = Integer.toString(pc);
+           ar = ar + 1;
+           pc = ar;
+         }
+         else if([arReg][0] == 6)
+         {
+           //Increment and skip if zero
+           hexxx[ar] = Integer.toString(Integer.parseInt(hexxx[ar]) + 1);
+           if(Integer.parseInt(hexxx[ar]) == 0)
+           {
+             pc++;
+           }
+         }
+         else if([arReg][0] == 8)
+         {
+        	 
+         }
+         else if([arReg][0] == 9)
+         {
+        	 
+         }
+         else if([arReg][0] == 10)
+         {
+        	 
+         }
+         else if([arReg][0] == 11)
+         {
+        	 
+         }
+         else if([arReg][0] == 12)
+         {
+        	 
+         }
+         else if([arReg][0] == 13)
+         {
+        	 
+         }
+         else if([arReg][0] == 14)
+         {
+        	 
+         }
+         else if([arReg][0] == 15)
+         {
+        	 
+         }
+       }
+     
+     System.out.println("AC     DR     PC     AR     M[AR]     IR     E");
+     System.out.println(ac + "    " +dr+ "   " + pc + "      " + ar + "    " 
+             + hexxx[ar] + "      " + ir + "     " + e);
+     System.out.println("------------------------------------------------");
+     
+     //t0
+     ar = pc;
+     System.out.println("T0: \n");
+     System.out.println("AC     DR     PC     AR     M[AR]     IR     E");
+     System.out.println(ac + "    " +dr+ "   " + pc + "      " + ar + "    " 
+             + hexxx[ar] + "      " + ir + "     " + e);
+     System.out.println("------------------------------------------------");
+     
+     //t1
+     ir = Integer.parseInt(hexxx[ar]);
+     pc = pc + 1;
+     System.out.println("T1: \n");
+     System.out.println("AC     DR     PC     AR     M[AR]     IR     E");
+     System.out.println(ac + "    " +dr+ "   " + pc + "      " + ar + "    " 
+             + hexxx[ar] + "      " + ir + "     " + e);
+     System.out.println("------------------------------------------------");
+     
+     //t2
+     ar = ir;
+     System.out.println("T2: \n");
+     System.out.println("AC     DR     PC     AR     M[AR]     IR     E");
+     System.out.println(ac + "    " +dr+ "   " + pc + "      " + ar + "    " 
+             + hexxx[ar] + "      " + ir + "     " + e);
+     System.out.println("------------------------------------------------");
+     
+     //t3
+     //t4
+     //t5
+     //t6
+}
+
+   public static void main(String[] args) {
+     
+     System.out.println("First run: ");
+     Manos.getNums();
+     
+     System.out.println("\nRepeat: ");
+     Manos.getNums();
+     
+     System.exit(0);
+   }
+}
