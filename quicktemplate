@@ -52,25 +52,20 @@ public class Manos {
          
           for(int i = rand_pc; i<5; i++)
           {
-            
-            /*
-             * PRINT AND IMPLEMENT THIS 
-             *
-             * ar = pc;
-         cout << endl;
-         cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-           << mar << "          " << e << "      T0" <<endl;       //T0 output
-         
+              ar = pc;
+             
+        System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
+         + mar + "          " + e + "      T0" //t0 output
          mar = arrayMEM[pc][0] * 1000 + arrayMEM[pc][1];
          ir = mar;
          pc++;//T1
-         cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-           << mar << "          " << e << "      T1" <<endl;       //T1 output
+         System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
+         + mar + "          " + e + "      T1" //T1 output
 
          ar = arrayMEM[ar][1];
          mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
-         cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
-           << mar << "          " << e << "      T2" <<endl;       //T2 output
+         System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
+         + mar + "          " + e + "      T2"      //T2 output      
              */
             
            
