@@ -13,30 +13,6 @@ public class Manos {
 
    public static void getNums()
   {
-	 //variables
-	 /*
-	  *void ConvertToBinary(int n);
-void ConvertToHex(int n);
-
-void And();	//Sets prototypes to all functions
-void Add();
-void Load();
-void Store();
-void Branch();
-void BranchAndSave();
-void Increment();
-void ClearAC();
-void ClearE();
-void ComplimentAC();
-void ComplimentE();
-void CircularRight();
-void CircularLeft();
-void IncrementAC();
-void SkipACNeg();
-void SkipACPos();
-void SkipACZero();
-void SkipEZero();
-void Halt();
 
 //Global Variables
 int acReg = 42;		//Sets global variables to be modified at any point
@@ -100,6 +76,8 @@ int arReg = 80;
     	  */
        
       
+      	//direct version of all memory functions
+      	
           if([memoryarray[arReg][0] == 0)
          {
            //And memory word to AC
@@ -149,6 +127,7 @@ int arReg = 80;
              pc++;
            }
          }
+         //indirect versions of previous 
          else if(memoryarray[arReg][0] == 8)
          {
         	 
