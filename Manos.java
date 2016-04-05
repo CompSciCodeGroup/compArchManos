@@ -20,19 +20,17 @@ public class Manos {
   {
 
 //Global Variables
-int ac = 56;   //Sets global variables to be modified at any point
-int pc = 23;
+int ac = 17;   //Sets global variables to be modified at any point
+int pc = 38;
 int e = 1;
-int dr = 64;
-int ir = 324;
+int dr = 69;
+int ir = 320;
 int mar = 0;
-int ar; 
+int ar = 25; 
     
    //counter
-int rand_pc = 0;
+   int rand_pc = 0;
      int[][] memoryarray = new int[400][2];
-     //loop counter 
-     //int[] registerarray = new int{ 800, 400, 200, 100, 80, 40, 20, 10, 8, 4, 2, 1 };
      
      for(int i = 0; i<399; i++)
      {
@@ -57,14 +55,17 @@ int rand_pc = 0;
          }
         
      }
-    
+     System.out.println("\nIR      "+"AC      "+"DR      "+"PC      "+"AR      "+"M[AR]      "+"E ");
+    System.out.println(""+ ir +"       " + ac + "      " + dr + "      " + pc + "      " + ar + "      "
+      + mar + "          " + e ); //starting values
     
      for(int i = rand_pc; i<5; i++)
      {
        
        
          ar = pc;
-    System.out.println("\n"+ ir +"      " + ac + "      " + dr + "      " + pc + "      " + ar + "      "
+    System.out.println("\nIR      "+"AC      "+"DR      "+"PC      "+"AR      "+"M[AR]      "+"E ");
+    System.out.println(""+ ir +"       " + ac + "      " + dr + "      " + pc + "      " + ar + "      "
       + mar + "          " + e + "      T0" );      //T0 output
     
     mar = memoryarray[pc][0] * 1000 + memoryarray[pc][1];
