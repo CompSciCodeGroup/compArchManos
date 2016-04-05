@@ -15,21 +15,20 @@ public class Manos {
   {
 
 //Global Variables
-int acReg = 42;		//Sets global variables to be modified at any point
-int pcReg = 12;
-int eReg = 1;
-int drReg = 13;
-int irReg = 120;
-int marReg = 0;
-int arReg = 80; 
-	  * 
-	  */
-	 //counter
-	   
+int ac = 56;   //Sets global variables to be modified at any point
+int pc = 23;
+int e = 1;
+int dr = 64;
+int ir = 324;
+int mar = 0;
+int ar = 69; 
+    
+   //counter
+     
      //Memoryarray[400][1]
-	   //loop counter 
-	   //registerarray[] = { 800, 400, 200, 100, 80, 40, 20, 10, 8, 4, 2, 1 };
-	   
+     //loop counter 
+     //registerarray[] = { 800, 400, 200, 100, 80, 40, 20, 10, 8, 4, 2, 1 };
+     
      for(int i = 0; i<399; i++)
      {
        Random gen1 = new Random();
@@ -39,218 +38,217 @@ int arReg = 80;
      
      for(int i = 0; i<399; i++)
      {
-    	 /*
-    	  * if(memoryarray[i][1] == 7
-    	  * {
-    	  * 	memoryarrry[i][1] = random registerarray[] value
-    	  * }
-    	  * else
-    	  * {
-    	  * 	memoryarray[i][1] = gen1.nextInt(399)
-    	  * }
-    	  */
+       /*
+        * if(memoryarray[i][1] == 7
+        * {
+        *   memoryarrry[i][1] = random registerarray[] value
+        * }
+        * else
+        * {
+        *   memoryarray[i][1] = gen1.nextInt(399)
+        * }
+        */
      }
     
     
      for(int i = rand_pc; i<5; i++)
      {
-    	 
-    	 /*
-    	  * PRINT AND IMPLEMENT THIS 
-    	  *
-    	  * arReg = pcReg;
-		cout << endl;
-		cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-			<< marReg << "          " << eReg << "      T0" <<endl;				//T0 output
-		
-		marReg = arrayMEM[pcReg][0] * 1000 + arrayMEM[pcReg][1];
-		irReg = marReg;
-		pcReg++;//T1
-		cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-			<< marReg << "          " << eReg << "      T1" <<endl;				//T1 output
+       
+       /*
+        * PRINT AND IMPLEMENT THIS 
+        *
+        * ar = pc;
+    cout << endl;
+    cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+      << mar << "          " << e << "      T0" <<endl;       //T0 output
+    
+    mar = arrayMEM[pc][0] * 1000 + arrayMEM[pc][1];
+    ir = mar;
+    pc++;//T1
+    cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+      << mar << "          " << e << "      T1" <<endl;       //T1 output
 
-		arReg = arrayMEM[arReg][1];
-		marReg = arrayMEM[arrayMEM[arReg][1]][0] * 1000 + arrayMEM[arrayMEM[arReg][1]][1];
-		cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-			<< marReg << "          " << eReg << "      T2" <<endl;				//T2 output
-    	  */
+    ar = arrayMEM[ar][1];
+    mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
+    cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+      << mar << "          " << e << "      T2" <<endl;       //T2 output
+        */
        
       
-      	//direct version of all memory functions
-      	
-        if([memoryarray[arReg][0] == 0)
+        //direct version of all memory functions
+        
+        if([memoryarray[ar][0] == 0)
          {
            //And memory word to AC
-           /*
-            * cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T3" << endl;				//T3 output
-	drReg = marReg;
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T4" << endl;				//T3 output
-	acReg = acReg & drReg;
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T5" << endl;				//T3 output
-            */
+           
+           System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
+    + mar + "          " + e + "      T3"  )   ;    //T3 output
+  dr = mar;
+  System.out.println( ir + "      " + ac + "      " + dr + "      " + pc + "      " + ar + "      "
+    + mar + "          " + e + "      T4" );        //T3 output
+  ac = ac & dr;
+  System.out.println(  ir + "      " + ac + "      " + dr + "      " + pc  + "      " + ar + "      "
+    + mar + "          " + e + "      T5" )   ;     //T3 output
+            
            
          }
-         else if(memoryarray[arReg][0] == 1)
+         else if(memoryarray[ar][0] == 1)
          {
            //Add memory word to AC
-          /*
-           * cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T3" << endl;				//T3 output
-	drReg = marReg;
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T4" << endl;				//T3 output
-	acReg = drReg + acReg;
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T5" << endl;				//T3 output
-           */
+          
+                     System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
+    + mar + "          " + e + "      T3"  )   ;    //T3 output
+  dr = mar;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
+  ac = dr + ac;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
+           
          }
-         else if(memoryarray[arReg][0] == 2)
+         else if(memoryarray[ar][0] == 2)
          {
            //Load memory word to AC
-          /*
-           * cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T3" << endl;				//T3 output
-	drReg = marReg;
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T4" << endl;				//T3 output
-	acReg = drReg;
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T5" << endl;				//T3 output
-           */
+          
+           System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
+    + mar + "          " + e + "      T3"  )   ;    //T3 output        //T3 output
+  dr = mar;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
+  ac = dr;
+  System.out.println( ir + "      " + ac+ "      " +dr + "      "+ pc + "      " + ar + "      "
++ mar + "          " + e + "      T3"  )   ;    //T3 output
          }
-         else if(memoryarray[arReg][0] == 3)
+         else if(memoryarray[ar][0] == 3)
          {
            //Store content of AC in memory
            /*
-            * cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T3" << endl;				//T3 output
-	marReg = acReg;
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T4" << endl;				//T3 output
+            * cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+    << mar << "          " << e << "      T3" << endl;        //T3 output
+  mar = ac;
+  cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+    << mar << "          " << e << "      T4" << endl;        //T3 output
             */
            
          }
-         else if(memoryarray[arReg][0] == 4)
+         else if(memoryarray[ar][0] == 4)
          {
            //Branch Unconditionally
            /*
-            * cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T3" << endl;				//T3 output
-	pcReg = arReg;
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T4" << endl;				//T3 output
+            * cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+    << mar << "          " << e << "      T3" << endl;        //T3 output
+  pc = ar;
+  cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+    << mar << "          " << e << "      T4" << endl;        //T3 output
             */
          }
-         else if(memoryarray[arReg][0] == 5)
+         else if(memoryarray[ar][0] == 5)
          {
            //Branch and save return address
            /*
-            * cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T3" << endl;				//T3 output
-	marReg = pcReg;
-	arReg++;
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T4" << endl;				//T3 output
-	pcReg = arReg;
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T5" << endl;				//T3 output
+            * cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+    << mar << "          " << e << "      T3" << endl;        //T3 output
+  mar = pc;
+  ar++;
+  cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+    << mar << "          " << e << "      T4" << endl;        //T3 output
+  pc = ar;
+  cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+    << mar << "          " << e << "      T5" << endl;        //T3 output
             */
          }
-         else if(memoryarray[arReg][0] == 6)
+         else if(memoryarray[ar][0] == 6)
          {
            //Increment and skip if zero
           /*
-           * cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T3" << endl;				//T3 output
-	drReg = marReg;
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T4" << endl;				//T3 output
-	drReg++;
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T5" << endl;				//T3 output
-	marReg = drReg;
-	if (drReg == 0)
-	{
-		pcReg++;
-	}
-	cout << irReg << "      " << acReg << "      " << drReg << "      " << pcReg << "      " << arReg << "      "
-		<< marReg << "          " << eReg << "      T6" << endl;				//T3 output
+           * cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+    << mar << "          " << e << "      T3" << endl;        //T3 output
+  dr = mar;
+  cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+    << mar << "          " << e << "      T4" << endl;        //T3 output
+  dr++;
+  cout << ir << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+    << mar << "          " << e << "      T5" << endl;        //T3 output
+  mar = dr;
+  if (dr == 0)
+  {
+    pc++;
+  }
+  cout <<  << "      " << ac << "      " << dr << "      " << pc << "      " << ar << "      "
+    << mar << "          " << e << "      T6" << endl;        //T3 output
            */
          }
-         else if(memoryarray[arReg][0] == 8)
+         else if(memoryarray[ar][0] == 8)
          {
-        	/*
-        	 * arReg = arrayMEM[arReg][1];
-			marReg = arrayMEM[arrayMEM[arReg][1]][0] * 1000 + arrayMEM[arrayMEM[arReg][1]][1];
-			
-			then copy paste 0
-        	 */
+          /*
+           * ar = arrayMEM[ar][1];
+      mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
+      
+      then copy paste 0
+           */
          }
-         else if(memoryarray[arReg][0] == 9)
+         else if(memoryarray[ar][0] == 9)
          {
-        	 /*
-        	  * arReg = arrayMEM[arReg][1];
-			marReg = arrayMEM[arrayMEM[arReg][1]][0] * 1000 + arrayMEM[arrayMEM[arReg][1]][1];
-			
-			then copy paste 1
-        	  */
+           /*
+            * ar = arrayMEM[ar][1];
+      mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
+      
+      then copy paste 1
+            */
          }
-         else if(memoryarray[arReg][0] == 10)
+         else if(memoryarray[ar][0] == 10)
          {
-        	 /*
-        	  * arReg = arrayMEM[arReg][1];
-			marReg = arrayMEM[arrayMEM[arReg][1]][0] * 1000 + arrayMEM[arrayMEM[arReg][1]][1];
-			
-			then copy paste 2
-        	  */
+           /*
+            * ar = arrayMEM[ar][1];
+      mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
+      
+      then copy paste 2
+            */
          }
-         else if(memoryarray[arReg][0] == 11)
+         else if(memoryarray[ar][0] == 11)
          {
-        	 /*
-        	  * arReg = arrayMEM[arReg][1];
-			marReg = arrayMEM[arrayMEM[arReg][1]][0] * 1000 + arrayMEM[arrayMEM[arReg][1]][1];
-			
-			then copy paste 3
-        	  */
+           /*
+            * ar = arrayMEM[ar][1];
+      mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
+      
+      then copy paste 3
+            */
          }
-         else if(memoryarray[arReg][0] == 12)
+         else if(memoryarray[ar][0] == 12)
          {
-        	 /*
-        	  * arReg = arrayMEM[arReg][1];
-			marReg = arrayMEM[arrayMEM[arReg][1]][0] * 1000 + arrayMEM[arrayMEM[arReg][1]][1];
-			
-			then copy paste 4
-        	  */
+           /*
+            * ar = arrayMEM[ar][1];
+      mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
+      
+      then copy paste 4
+            */
          }
-         else if(memoryarray[arReg][0] == 13)
+         else if(memoryarray[ar][0] == 13)
          {
-        	 /*
-        	  * arReg = arrayMEM[arReg][1];
-			marReg = arrayMEM[arrayMEM[arReg][1]][0] * 1000 + arrayMEM[arrayMEM[arReg][1]][1];
-			
-			then copy paste 5
-        	  */
+           /*
+            * ar = arrayMEM[ar][1];
+      mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
+      
+      then copy paste 5
+            */
          }
-         else if(memoryarray[arReg][0] == 14)
+         else if(memoryarray[ar][0] == 14)
          {
-        	 /*
-        	  * arReg = arrayMEM[arReg][1];
-			marReg = arrayMEM[arrayMEM[arReg][1]][0] * 1000 + arrayMEM[arrayMEM[arReg][1]][1];
-			
-			then copy paste 6
-        	  */
+           /*
+            * ar = arrayMEM[ar][1];
+      mar = arrayMEM[arrayMEM[ar][1]][0] * 1000 + arrayMEM[arrayMEM[ar][1]][1];
+      
+      then copy paste 6
+            */
          }
-         else if(memorayarray[arReg][0] == 7)
+         else if(memorayarray[ar][0] == 7)
          {
-        	   if(arrayMEM[arReg][1] == 1)
+             if(arrayMEM[ar][1] == 1)
                {
                  //Halt Computer and needs output like memory for each t step
                  break;
                }
-               else if(arrayMEM[arReg][1] == 2)
+               else if(arrayMEM[ar][1] == 2)
                {
                  //Skip next instruction if E is zero and needs output like memory for each t step
                  if(e == 0)
@@ -261,7 +259,7 @@ int arReg = 80;
                  else
                    break;
                }
-               else if(arrayMEM[arReg][1] == 4)
+               else if(arrayMEM[ar][1] == 4)
                {
                  //Skip next instruction if AC is zero and needs output like memory for each t step
                  if(ac == 0)
@@ -272,7 +270,7 @@ int arReg = 80;
                  else
                    break;
                }
-               else if(arrayMEM[arReg][1] == 8)
+               else if(arrayMEM[ar][1] == 8)
                {
                  //Skip next instruction if AC negative and needs output like memory for each t step
                  if(ac < 0)
@@ -282,7 +280,7 @@ int arReg = 80;
                  else
                    break;
                }
-               else if(arrayMEM[arReg][1] == 10)
+               else if(arrayMEM[ar][1] == 10)
                {
                  //Skip Next Instruction if AC positive and needs output like memory for each t step
                  if(ac > 0)
@@ -292,48 +290,48 @@ int arReg = 80;
                  else
                    break;
                }
-               else if(arrayMEM[arReg][1] == 20)
+               else if(arrayMEM[ar][1] == 20)
                {
-            	   //Increment AC and needs output like memory for each t step
+                 //Increment AC and needs output like memory for each t step
                    ac = Integer.parseInt(binxx[i]);
                    ac++; 
                }
-               else if(arrayMEM[arReg][1] == 40)
+               else if(arrayMEM[ar][1] == 40)
                {
-            	   //Circulate left AC and E and needs output like memory for each t step
+                 //Circulate left AC and E and needs output like memory for each t step
                    ac = Integer.parseInt(binxx[i]) << 1;
                }
-               else if(arrayMEM[arReg][1] == 80)
+               else if(arrayMEM[ar][1] == 80)
                {
-            	   //Circulate right AC and E and needs output like memory for each t step
+                 //Circulate right AC and E and needs output like memory for each t step
                    ac = Integer.parseInt(binxx[i]) >> 1;
                }
-               else if(arrayMEM[arReg][1] == 100)
+               else if(arrayMEM[ar][1] == 100)
                {
-            	 //Complement E and needs output like memory for each t step
+               //Complement E and needs output like memory for each t step
                    e = ~e;
                }
-               else if(arrayMEM[arReg][1] == 200)
+               else if(arrayMEM[ar][1] == 200)
                {
-            	   //Complement AC and needs output like memory for each t step
+                 //Complement AC and needs output like memory for each t step
                    ac = ~ac;
                }
-               else if(arrayMEM[arReg][1] == 400)
+               else if(arrayMEM[ar][1] == 400)
                {
-            	 //Clear E and needs output like memory for each t step
+               //Clear E and needs output like memory for each t step
                    e = 0;
                }
-               else if(arrayMEM[arReg][1] == 800)
+               else if(arrayMEM[ar][1] == 800)
                {
-            	   //Clear AC and needs output like memory for each t step
+                 //Clear AC and needs output like memory for each t step
                    ac = 0;
                }
-         	}
+          }
          }
        }
      
   
-}
+
 
    public static void main(String[] args) {
      
